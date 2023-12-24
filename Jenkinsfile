@@ -5,9 +5,7 @@ pipeline {
       parallel {
         stage('Log Tool Versions') {
           steps {
-            sh '''mvn --version
-git --version
-java -version'''
+            sh 'java -version'
           }
         }
 
